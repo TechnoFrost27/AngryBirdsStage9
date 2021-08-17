@@ -13,7 +13,7 @@ var bg = "sprites/bg1.png";
 var score = 0;
 
 function preload() {
-    getBackgroundImg();
+    backgroundImg = loadImage(bg);
 }
 
 function setup(){
@@ -108,8 +108,5 @@ async function getBackgroundImg(){
     var datetime = responseJSON.datetime;
     var hour = datetime.slice(11,13);
     
-    
 
-    backgroundImg = loadImage(bg);
-    console.log(backgroundImg);
 }
